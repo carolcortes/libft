@@ -6,18 +6,18 @@
 #    By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 11:57:05 by cade-oli          #+#    #+#              #
-#    Updated: 2024/10/23 14:16:31 by cade-oli         ###   ########.fr        #
+#    Updated: 2024/10/23 15:39:12 by cade-oli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft_test
+NAME = libft_tests
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 LIBFT_PATH = ../libft.a
 INCLUDES = -I ..
-TEST_SRC = $(wildcard *_test.c)
+TEST_SRC = $(wildcard *_test.c) libft_tests.c
 TEST_OBJ = $(TEST_SRC:.c=.o)
 
 MAGENTA = \033[0;35m

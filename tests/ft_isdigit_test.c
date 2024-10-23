@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha_test.c                                  :+:      :+:    :+:   */
+/*   ft_isdigit_test.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 12:07:05 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 15:39:41 by cade-oli         ###   ########.fr       */
+/*   Created: 2024/10/23 15:26:46 by cade-oli          #+#    #+#             */
+/*   Updated: 2024/10/23 15:39:44 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,32 @@
 #include <ctype.h>
 #include <stdio.h>
 
-int	ft_isalpha_test(void)
+int	ft_isdigit_test(void)
 {
-	int	chars[] = {'A', 'z', 'b', 'G', '!', '0', '9', -1, 128};
-	int	num_tests;
+	int chars[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+					'A', 'z', '!', -1, 128};
 	int	i;
+	int	test_len;
 	int	c;
 	int	original;
 
 	printf("\n*************************************");
-	printf("\n*     Running ft_isalpha() Tests    *\n");
+	printf("\n*      Running ft_digit() Tests     *\n");
 	printf("*************************************\n");
-	num_tests = sizeof(chars) / sizeof(chars[0]);
 	i = -1;
-	while (++i < num_tests)
+	test_len = sizeof(chars) / sizeof(chars[0]);
+	while (++i < test_len)
 	{
 		c = chars[i];
-		original = isalpha(c);
+		original = isdigit(c);
 		if (original > 0)
 			original = 1;
-		if (original == ft_isalpha(c))
+		if (original == ft_isdigit(c))
 			printf("%s[✔] Test passed for input '%c' (ASCII: %d)%s\n",
 				GREEN, c, c, RESET);
 		else
 			printf("%s[✖] Test failed for input '%c' (ASCII: %d). Expected: %d, Got: %d%s\n",
-				RED, c, c, original, ft_isalpha(c), RESET);
+				RED, c, c, original, ft_isdigit(c), RESET);
 	}
 	printf("\n");
 	return (0);
