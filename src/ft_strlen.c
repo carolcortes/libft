@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft_tests.c                                      :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 15:32:57 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 17:01:36 by cade-oli         ###   ########.fr       */
+/*   Created: 2024/10/23 16:27:54 by cade-oli          #+#    #+#             */
+/*   Updated: 2024/10/23 17:05:53 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_tests.h"
-
-int	main(void)
+int	ft_strlen(const char *s)
 {
-	ft_isalpha_test();
-	ft_isdigit_test();
-	ft_isalnum_test();
-	ft_isascii_test();
-	ft_isprint_test();
-	ft_strlen_test();
-	return (0);
+	int	len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }

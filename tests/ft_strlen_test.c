@@ -1,46 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha_test.c                                  :+:      :+:    :+:   */
+/*   ft_strlen_test.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 12:07:05 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 16:43:00 by cade-oli         ###   ########.fr       */
+/*   Created: 2024/10/23 16:30:49 by cade-oli          #+#    #+#             */
+/*   Updated: 2024/10/23 17:02:46 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include "ansi_colors.h"
-#include <ctype.h>
+#include <string.h>
 #include <stdio.h>
 
-int	ft_isalpha_test(void)
+int	ft_strlen_test()
 {
-	int	chars[] = {'A', 'z', 'b', 'G', '!', '0', '9', -1, 128};
+	const char *strings[] = {
+		"Hello, World!",
+		"",
+		"42",
+		"This is a longer string for testing purposes.",
+		"\t\n\v\f\r",
+		"1234567890",
+		" ",
+		"\0Hidden"
+	};
 	int	num_tests;
 	int	i;
-	int	c;
 	int	original;
 
 	printf("\n*************************************");
-	printf("\n*     Running ft_isalpha() Tests    *\n");
+	printf("\n*     Running ft_strlen() Tests    *\n");
 	printf("*************************************\n");
-	num_tests = sizeof(chars) / sizeof(chars[0]);
+
+	num_tests = sizeof(strings) / sizeof(strings[0]);
 	i = -1;
 	while (++i < num_tests)
 	{
-		c = chars[i];
-		original = isalpha(c);
-		if (original > 0)
-			original = 1;
-		if (original == ft_isalpha(c))
-			printf("%s[✔] Test passed for input '%c' (ASCII: %d)%s\n",
-				GREEN, c, c, RESET);
+		original = strlen(strings[i]);
+		if (original == ft_strlen(strings[i]))
+			printf("%s[✔] Test passed for string \"%s\" (Got: %d)%s\n",
+                GREEN, strings[i], ft_strlen(strings[i]), RESET);
 		else
-			printf("%s[✖] Test failed for input '%c' (ASCII: %d). Expected: %d, Got: %d%s\n",
-				RED, c, c, original, ft_isalpha(c), RESET);
+			printf("%s[✖] Test failed for string \"%s\" (Expected: %d, Got: %d)%s\n",
+                RED, strings[i], original, ft_strlen(strings[i]), RESET);
 	}
-	printf("\n");
 	return (0);
 }
