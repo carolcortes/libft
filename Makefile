@@ -20,12 +20,6 @@ OBJ_FILES = $(SRC_FILES:.c=.o)
 H_FILES = $(wildcard *.h)
 INCLUDES = -I .
 
-GREEN  = \033[0;32m
-BLUE   = \033[0;34m
-MAGENTA = \033[0;35m
-CYAN   = \033[0;36m
-RESET  = \033[0m
-
 all: $(NAME)
 	@echo "$(GREEN)✔ Build complete: $(NAME)$(RESET)"
 
@@ -42,16 +36,21 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@$(MAKE) fclean --no-print-directory -C tests > /dev/null 2>&1
-	@echo "🧹$(MAGENTA) Library and tests files cleaned.$(RESET)"
+	@echo "🧹$(MAGENTA) Library file cleaned.$(RESET)"
 
 re:
 	@echo "$(CYAN)🔄 Rebuilding project...$(RESET)"
 	@$(MAKE) --no-print-directory fclean all
 
-test:
-	@echo "$(MAGENTA)🚀 Running tests...$(RESET)"
-	@$(MAKE) --no-print-directory -C tests
-	@echo "$(MAGENTA)🚀 All tests completed!$(RESET)"
-
 .PHONY: all clean fclean re test
+
+#==============================================================================#
+#                                  UTILS                                       #
+#==============================================================================#
+
+# Colors
+GREEN = \033[0;32m
+BLUE   = \033[0;34m
+MAGENTA = \033[0;35m
+CYAN   = \033[0;36m
+RESET  = \033[0m
