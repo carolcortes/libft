@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/26 14:13:07 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 14:40:43 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const char *str);
 void	*ft_memset(void *b, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
-// ft_memmove
+void	*ft_memmove(void *dest, const void *src, size_t n);
 // ft_strlcpy
 // ft_strlcat
 // ft_toupper
