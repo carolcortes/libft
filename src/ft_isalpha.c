@@ -6,9 +6,11 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:41 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 10:19:48 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:10:43 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

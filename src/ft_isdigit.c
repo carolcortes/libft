@@ -6,9 +6,11 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:03:11 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 11:04:35 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:10:50 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

@@ -6,9 +6,11 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:16:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 11:18:52 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:10:48 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

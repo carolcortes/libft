@@ -6,9 +6,11 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:53:49 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 16:18:38 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:10:53 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

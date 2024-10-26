@@ -6,15 +6,15 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 11:07:00 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 13:27:26 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:25:01 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-		return (1);
+		return (-1);
 	return (0);
 }

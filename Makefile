@@ -6,7 +6,7 @@
 #    By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 10:20:02 by cade-oli          #+#    #+#              #
-#    Updated: 2024/10/23 14:19:49 by cade-oli         ###   ########.fr        #
+#    Updated: 2024/10/26 12:07:23 by cade-oli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CFLAGS = -Wall -Wextra -Werror
 SRC_FILES = $(wildcard src/*.c)
 OBJ_FILES = $(SRC_FILES:.c=.o)
 H_FILES = $(wildcard *.h)
-INCLUDES = -I .
+INCLUDES = -I.
 
 all: $(NAME)
 	@echo "$(GREEN)✔ Build complete: $(NAME)$(RESET)"

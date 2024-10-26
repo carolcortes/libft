@@ -6,13 +6,15 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:27:54 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/23 17:05:53 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:17:36 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
 	while (s[len])
