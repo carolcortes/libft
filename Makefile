@@ -6,7 +6,7 @@
 #    By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 10:20:02 by cade-oli          #+#    #+#              #
-#    Updated: 2024/10/26 12:07:23 by cade-oli         ###   ########.fr        #
+#    Updated: 2024/10/28 12:08:00 by cade-oli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC_FILES = $(wildcard src/*.c)
+SRC_FILES = $(wildcard *.c)
 OBJ_FILES = $(SRC_FILES:.c=.o)
 H_FILES = $(wildcard *.h)
 INCLUDES = -I.
