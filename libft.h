@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/28 15:02:19 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/28 15:17:21 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(char *s, int c);
 char	*ft_strrchr(char *s, int c);
-// ft_strncmp
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // ft_memchr
 // ft_memcmp
 // ft_strnstr
