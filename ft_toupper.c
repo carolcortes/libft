@@ -6,9 +6,11 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 13:55:47 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/28 14:24:39 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:32:00 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
