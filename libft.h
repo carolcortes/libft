@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/29 22:31:35 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/10/30 08:06:47 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int		ft_atoi(const char *nptr);
 
 // - With malloc():
 void	*ft_calloc(size_t nmemb, size_t size);
-// strdup
+char	*ft_strdup(const char *s);
 
 // - Aditional:
 // ft_substr
