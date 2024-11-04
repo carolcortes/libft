@@ -51,7 +51,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 // ft_strmapi
 // ft_striteri
 void	ft_putchar_fd(char c, int fd);
-// ft_putstr_fd
+void	ft_putstr_fd(char *s, int fd);
 // ft_putendl_fd
 // ft_putnbr_fd
 
