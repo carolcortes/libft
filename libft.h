@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/04 10:48:48 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/04 12:25:57 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_strdup(const char *s);
 
 // - Aditional:
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-// ft_strjoin
+char	*ft_strjoin(char const *s1, char const *s2);
 // ft_strtrim
 // ft_split
 // ft_itoa
