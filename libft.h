@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/04 15:24:32 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/04 15:40:42 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 // ft_striteri
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
-// ft_putendl_fd
+void	ft_putendl_fd(char *s, int fd);
 // ft_putnbr_fd
 
 // - Bonus:
