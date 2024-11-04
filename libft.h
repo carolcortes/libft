@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/10/30 08:06:47 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:48:48 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 
 // - Aditional:
-// ft_substr
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 // ft_strjoin
 // ft_strtrim
 // ft_split
