@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/06 15:21:28 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/06 22:28:18 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,13 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 // - Bonus:
-// typedef struct s_list
-// {
-// void *content;
-// struct s_list *next;
-// }
+typedef struct s_list
+{
+	void *content;
+	struct s_list *next;
+}	t_list;
 
-// ft_lstnew
+t_list	*ft_lstnew(void *content);
 // ft_lstadd_front
 // ft_lstsize
 // ft_lstlast
