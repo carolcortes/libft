@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:21:29 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/06 18:52:51 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/07 09:31:09 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	**ft_split(char const *s, char c)
 	result = ft_calloc(count_tokens(s, c) + 1, sizeof(char *));
 	if (!result)
 		return (NULL);
-	result[count_tokens(s, c)] = '\0';
+	result[count_tokens(s, c)] = NULL;
 	j = -1;
 	i = -1;
 	i_token = -1;
