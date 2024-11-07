@@ -6,7 +6,7 @@
 #    By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 10:20:02 by cade-oli          #+#    #+#              #
-#    Updated: 2024/11/06 22:27:09 by cade-oli         ###   ########.fr        #
+#    Updated: 2024/11/07 13:18:36 by cade-oli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,7 @@ SRC_FILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_putnbr_fd.c
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
-BONUS_FILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+BONUS_FILES = ft_lstnew.c
 BONUS_OBJ = $(BONUS_FILES:.c=.o)
 
 H_FILE = libft.h
@@ -41,12 +40,12 @@ $(NAME): $(OBJ_FILES)
 %.o: %.c $(H_FILES)
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
-bonus: $(OBJ_FILES) $(BONUS_OBJ_FILES)
-	@ar rcs $(NAME) $(OBJ_FILES) $(BONUS_OBJ_FILES)
+bonus: $(OBJ_FILES) $(BONUS_OBJ)
+	@ar rcs $(NAME) $(OBJ_FILES) $(BONUS_OBJ)
 	@echo "$(GREEN)✔ Bonus functions added to $(NAME)$(RESET)"
 
 clean:
-	@rm -f $(OBJ_FILES) $(BONUS_OBJ_FILES)
+	@rm -f $(OBJ_FILES) $(BONUS_OBJ)
 	@echo "🧹$(MAGENTA) Object files cleaned.$(RESET)"
 
 fclean: clean
@@ -57,7 +56,7 @@ re:
 	@echo "$(CYAN)🔄 Rebuilding project...$(RESET)"
 	@$(MAKE) --no-print-directory fclean all
 
-.PHONY: all clean fclean re test
+.PHONY: all clean fclean re test bonus
 
 #==============================================================================#
 #                                  UTILS                                       #
