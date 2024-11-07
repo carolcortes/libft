@@ -62,7 +62,7 @@ typedef struct s_list
 }	t_list;
 
 t_list	*ft_lstnew(void *content);
-// ft_lstadd_front
+void	ft_lstadd_front(t_list **lst, t_list *new);
 // ft_lstsize
 // ft_lstlast
 // ft_lstadd_back
