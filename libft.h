@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/07 15:27:24 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:37:10 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
-// ft_lstclear
+void	ft_lstclear(t_list **lst, void (*del)(void*));
 // ft_lstiter
 // ft_lstmap
 
