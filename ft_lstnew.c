@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 22:05:36 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/06 22:54:20 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:48:00 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*el;
+	t_list	*node;
 
-	el = malloc(sizeof(t_list));
-	if (!el)
+	node = malloc(sizeof(t_list));
+	if (!node)
 		return (NULL);
-	el->content = content;
-	el->next = NULL;
-	return (el);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }

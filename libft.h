@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 10:19:24 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/06 22:28:18 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:58:11 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+// LIBC Functions:
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -37,12 +38,10 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *nptr);
-
-// - With malloc():
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 
-// - Aditional:
+// Aditional Functions:
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
@@ -55,11 +54,11 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-// - Bonus:
+// Bonus Functions:
 typedef struct s_list
 {
-	void *content;
-	struct s_list *next;
+	void			*content;
+	struct s_list	*next;
 }	t_list;
 
 t_list	*ft_lstnew(void *content);
