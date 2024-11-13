@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:32:06 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/04 14:34:34 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/13 10:28:21 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result = ft_substr(s1, i, (last_i - i + 1));
 	return (result);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	printf("%s", ft_strtrim("ababHello World!cababbb", "ab"));
-	return (0);
-} */

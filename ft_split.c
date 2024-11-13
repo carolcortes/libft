@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:21:29 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/07 09:31:09 by cade-oli         ###   ########.fr       */
+/*   Updated: 2024/11/13 10:28:28 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,19 +92,3 @@ void	*free_position(char **strs, int count)
 	free(strs);
 	return (NULL);
 }
-
-/* int	main(void)
-{
-	const char	str[] = "eh xuxu  gabriel";
-	char		**str_list;
-	char		c;
-	int			i;
-
-	i = -1;
-	c = ' ';
-	str_list = ft_split(str, c);
-	while (str_list[++i])
-		printf("[%i]: %s\n", i, str_list[i]);
-	free_position(str_list, i);
-	return (0);
-} */
