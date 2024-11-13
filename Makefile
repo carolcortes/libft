@@ -6,7 +6,7 @@
 #    By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/23 10:20:02 by cade-oli          #+#    #+#              #
-#    Updated: 2024/11/07 15:47:16 by cade-oli         ###   ########.fr        #
+#    Updated: 2024/11/13 10:32:35 by cade-oli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,6 @@ H_FILE = libft.h
 INCLUDES = -I.
 
 all: $(NAME)
-	@echo "$(GREEN)✔ Build complete: $(NAME)$(RESET)"
 
 $(NAME): $(OBJ_FILES)
 	@ar rcs $(NAME) $(OBJ_FILES)
