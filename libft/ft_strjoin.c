@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:31:48 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/11/04 12:29:00 by cade-oli         ###   ########.fr       */
+/*   Updated: 2025/04/12 17:01:04 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(ss, s2, len + 1);
 	return (ss);
 }
-
-/* #include <stdio.h>
-
-int	main(void)
-{
-	printf("%s", ft_strjoin("Hello ", "World!"));
-	return (0);
-} */
