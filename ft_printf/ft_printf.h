@@ -6,14 +6,14 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/04 11:36:54 by cade-oli          #+#    #+#             */
-/*   Updated: 2025/01/11 18:08:30 by cade-oli         ###   ########.fr       */
+/*   Updated: 2025/04/12 16:58:07 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "libft/libft.h"
+# include "../libft/libft.h"
 # include <stdarg.h>
 # include <unistd.h>
 
