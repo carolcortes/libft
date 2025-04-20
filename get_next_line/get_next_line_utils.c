@@ -6,38 +6,13 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 10:17:11 by cade-oli          #+#    #+#             */
-/*   Updated: 2025/02/11 20:56:23 by cade-oli         ###   ########.fr       */
+/*   Updated: 2025/04/20 14:40:04 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_strchr(const char *s, int c)
-{
-	int		i;
-	char	cc;
-
-	cc = (char) c;
-	i = -1;
-	while (s[++i])
-		if (s[i] == cc)
-			return ((char *) &s[i]);
-	if (s[i] == cc)
-		return ((char *) &s[i]);
-	return (NULL);
-}
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
-
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_joinstr(char *s1, char *s2)
 {
 	size_t	i;
 	size_t	j;

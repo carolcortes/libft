@@ -6,7 +6,7 @@
 /*   By: cade-oli <cade-oli@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 10:16:51 by cade-oli          #+#    #+#             */
-/*   Updated: 2025/02/11 22:05:57 by cade-oli         ###   ########.fr       */
+/*   Updated: 2025/04/20 14:40:22 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*read_file(int fd, char *b)
 			return (NULL);
 		}
 		block[bytes] = '\0';
-		b = ft_strjoin(b, block);
+		b = ft_joinstr(b, block);
 		if (ft_strchr(block, '\n'))
 			break ;
 	}
